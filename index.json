@@ -1,0 +1,37 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Shanzhi plugin catalog",
+    "zh": "善治插件目录"
+  },
+  "description": {
+    "en": "Reviewed third-party and Shanzhi plugins for Xiaozhi Office and DeepSeek Harness. No plugins have been listed yet.",
+    "zh": "面向小智办公和 DeepSeek Harness 的第三方及善治自研插件目录，目前尚未收录插件。"
+  },
+  "metadata": {
+    "categories": {
+      "productivity": {
+        "title": { "en": "Productivity", "zh": "办公效率" }
+      },
+      "data": {
+        "title": { "en": "Data and analytics", "zh": "数据分析" }
+      },
+      "integrations": {
+        "title": { "en": "Integrations", "zh": "系统集成" }
+      },
+      "development": {
+        "title": { "en": "Development", "zh": "开发工具" }
+      }
+    },
+    "labels": {
+      "shanzhi": {
+        "title": { "en": "By Shanzhi", "zh": "善治自研" }
+      },
+      "third-party": {
+        "title": { "en": "Third-party", "zh": "第三方" }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": []
+}
