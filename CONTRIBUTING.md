@@ -31,7 +31,7 @@ npm 来源字段为 `{"type":"npm"}`，必要时增加 `registry`。Git 来源�
 
 使用官方 `@deepseek-ai/dsh-plugin-market-index` 的 `parseMarketIndex` 校验完整 JSON，并使用 `marketInstallTarget` 核对每个版本的安装参数。它们可从与小智办公版本匹配的官方源码或构建产物中调用。不要仅以 JSON 语法正确作为可安装证据。
 
-发布后以不带 GitHub 凭据的 HTTP GET 检查 README 给出的原始索引地址，确认返回200、内容为预期 JSON，再在「发现」页刷新核对列表。索引 URL 必须直接返回文件，当前 Host 不接受重定向。
+发布后从客户端所在电脑以不带 GitHub 凭据的 HTTP GET 检查 README 给出的索引地址。使用与客户端相同的 Node `fetch`、`redirect: 'error'` 和15秒超时读取，确认返回200、内容为预期 JSON，并用官方校验器验证，再在「发现」页刷新核对列表。索引 URL 必须直接返回文件，当前 Host 不接受重定向。需要代理才能成功的请求只证明代理路径可用，应单独说明；CDN 更新还需核对缓存后的实际内容。
 
 ## 维护版本
 

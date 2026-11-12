@@ -4,17 +4,31 @@
 
 ## 配置索引源
 
-在「插件」页面的实验性插件中启用「自定义插件索引」，进入「发现 → 添加索引源」，填入以下地址：
+在「插件」页面的实验性插件中启用「自定义插件索引」，进入「发现 → 添加索引源」，填入以下地址。该 CDN 入口已于2026-11-12在客户端所在电脑上通过无代理 Node 请求和官方格式校验：
+
+```text
+https://fastly.jsdelivr.net/gh/shanzhi-digital/shanzhi-plugin-index@main/index.json
+```
+
+备用 CDN 地址：
+
+```text
+https://gcore.jsdelivr.net/gh/shanzhi-digital/shanzhi-plugin-index@main/index.json
+```
+
+GitHub 原始地址仍可使用，但需要当前网络能够访问 `raw.githubusercontent.com`：
 
 ```text
 https://raw.githubusercontent.com/shanzhi-digital/shanzhi-plugin-index/main/index.json
 ```
 
-索引为公开的静态 JSON，不需要 GitHub 登录。客户端所在网络需要能访问该地址；网页仓库地址不能代替上述原始文件地址。此仓库的创建不修改小智办公源码，也不自动改变现有客户端配置。
+上述地址读取同一份公开的静态 JSON，不需要 GitHub 登录。网页仓库地址不能代替索引文件地址。索引由 Host 进程读取，浏览器能够访问 GitHub 不代表 Host 的网络和代理也可用；CDN 的可达性同样取决于当前网络。此仓库的创建不修改小智办公源码，也不自动改变现有客户端配置。
+
+如果原始地址显示「无法读取此索引」，在「发现 → 管理索引源」移除该地址，添加上面的 CDN 地址，再刷新。2026-11-12的本机复测中，GitHub 原始地址返回 `ECONNRESET`，两个 CDN 地址均直接返回200、未重定向，内容与仓库一致。成功读取空目录后，应显示目录名称及「此索引没有插件」。
 
 ## 当前内容
 
-当前索引有效，但插件列表为空。尚未导入第三方目录、发布自研插件或宣称兼容性测试通过。添加真实插件并更新 `main` 上的 `index.json` 后，客户端刷新索引即可读取；Host 可能缓存索引，发现页的刷新操作会重新获取。
+当前索引有效，但插件列表为空。尚未导入第三方目录、发布自研插件或宣称兼容性测试通过。添加真实插件并更新 `main` 上的 `index.json` 后，客户端刷新索引即可读取；Host 可能缓存索引，发现页的刷新操作会重新获取。CDN 还存在独立缓存，更新不会保证立即可见，发布后需核对实际读取到的内容。
 
 ## 仓库分工
 
