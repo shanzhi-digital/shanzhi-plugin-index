@@ -5,8 +5,8 @@
     "zh": "善治插件目录"
   },
   "description": {
-    "en": "Shanzhi plugins for Xiaozhi Office and DeepSeek Harness. Private-source entries are listed for discovery; download access and compatibility are not guaranteed.",
-    "zh": "面向小智办公和 DeepSeek Harness 的善治插件目录；私有来源条目先行登记，下载权限及兼容性尚未验证。"
+    "en": "Shanzhi plugins for Xiaozhi Office and DeepSeek Harness. Listed sources are public; installation and runtime compatibility remain unverified.",
+    "zh": "面向小智办公和 DeepSeek Harness 的善治插件目录；源码已公开，安装及运行兼容性尚未验证。"
   },
   "metadata": {
     "categories": {
@@ -30,8 +30,8 @@
       "third-party": {
         "title": { "en": "Third-party", "zh": "第三方" }
       },
-      "private-source": {
-        "title": { "en": "Private source", "zh": "私有来源" }
+      "public-source": {
+        "title": { "en": "Public source", "zh": "公开来源" }
       },
       "listing-only": {
         "title": { "en": "Listing only", "zh": "仅登记" }
@@ -44,8 +44,8 @@
       "name": "@local/datahub-echarts",
       "title": { "en": "Query result charts", "zh": "通用查询结果图表" },
       "description": {
-        "en": "Display actual query results as charts or tables. Private repository; catalog registration only, with download and runtime compatibility unverified.",
-        "zh": "将真实查询结果展示为图表或表格，支持三条跟问。来源为私有仓库，当前仅登记，下载及运行兼容性未验证。"
+        "en": "Display actual query results as charts or tables. Source repository is public; catalog registration only, with installation and runtime compatibility unverified.",
+        "zh": "将真实查询结果展示为图表或表格，支持三条跟问。源码仓库已公开，当前仅登记，安装及运行兼容性未验证。"
       },
       "author": "Shanzhi Digital",
       "homepage": "https://github.com/shanzhi-digital/shanzhi-plugin/tree/d518a11df256cf6062acbd42cb2cad4d7f363daf/plugins/datahub-echarts",
@@ -56,7 +56,7 @@
       "metadata": {
         "category": "data",
         "keywords": ["echarts", "datahub", "chart", "table", "查询", "图表", "表格"],
-        "labels": ["shanzhi", "private-source", "listing-only"]
+        "labels": ["shanzhi", "public-source", "listing-only"]
       },
       "versions": [
         {

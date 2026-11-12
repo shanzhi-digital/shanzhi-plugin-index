@@ -38,17 +38,17 @@ https://raw.githubusercontent.com/shanzhi-digital/shanzhi-plugin-index/main/inde
 
 | 插件 | 包名 | 版本 | 状态 |
 |---|---|---|---|
-| 通用查询结果图表 | `@local/datahub-echarts` | `0.7.0` | 善治自研、私有来源、仅登记；下载与运行兼容性未验证 |
+| 通用查询结果图表 | `@local/datahub-echarts` | `0.7.0` | 善治自研、公开来源、仅登记；安装与运行兼容性未验证 |
 
 安装来源固定到源码仓库的完整提交和 `plugins/datahub-echarts` 子目录。该包未声明 `engines.dsh`，索引保留空要求，不表示已经通过当前版本兼容性测试。时间字段记录已核实源码提交的时间，不表示已向 npm 发布。
 
-本次按维护者要求仅登记插件，未复制或公开私有源码，未尝试下载、安装或发布 npm 包。发现页可能提供安装按钮，但实际操作仍需要私有仓库权限。更新 `main` 后，客户端刷新索引即可读取；Host 和 CDN 均有独立缓存，更新不保证立即可见，发布后需核对实际读取内容。
+源码仓库现已由维护者改为公开，本目录相应更新为「公开来源」，仍保留「仅登记」：尚未验证安装与当前 DSH 的运行兼容性，也未发布 npm 包。更新 `main` 后，客户端刷新索引即可读取；Host 和 CDN 均有独立缓存，更新不保证立即可见，发布后需核对实际读取内容。
 
 ## 仓库分工
 
 - [`index.json`](index.json)：客户端实际读取的目录，维护插件资料、精确版本、兼容范围和安装来源。
 - [`CONTRIBUTING.md`](CONTRIBUTING.md)：插件收录、版本维护和发布校验约定。
-- [shanzhi-plugin](https://github.com/shanzhi-digital/shanzhi-plugin)：组织现有的私有插件源码库，访问需要仓库权限。本仓库不会复制或公开其源码。
+- [shanzhi-plugin](https://github.com/shanzhi-digital/shanzhi-plugin)：组织的公开插件源码库。本仓库只引用版本和路径，不复制源码。
 
 收录公开第三方插件时，通常引用作者的 npm 包或固定 Git 提交即可，不需要复制代码。私有源码的安装仍要求用户拥有相应凭据；公开索引本身不会授予私有仓库访问权限，索引中不得包含令牌或密码。
 
