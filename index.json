@@ -55,9 +55,9 @@
       },
       "icon": "icons/datahub-echarts.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://github.com/shanzhi-digital/shanzhi-plugin/tree/47c8446a2f910a9edb55f96ebf687b1d534a59b3/plugins/datahub-echarts",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/3812bef12ef4977a1dff74c68c51b0f306810000/plugins/datahub-echarts",
       "repository": {
-        "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+        "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/datahub-echarts"
       },
       "metadata": {
@@ -68,11 +68,11 @@
       "versions": [
         {
           "version": "0.10.1",
-          "publishTimestamp": 1794792536,
+          "publishTimestamp": 1794815083,
           "source": {
             "type": "git",
-            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
-            "commit": "47c8446a2f910a9edb55f96ebf687b1d534a59b3",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "3812bef12ef4977a1dff74c68c51b0f306810000",
             "path": "plugins/datahub-echarts"
           },
           "engines": {}
@@ -82,7 +82,7 @@
           "publishTimestamp": 1794470391,
           "source": {
             "type": "git",
-            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
             "commit": "a60434dbbf2ccfc2e0557bbf2e3559eb9f75cd64",
             "path": "plugins/datahub-echarts"
           },
@@ -93,7 +93,7 @@
           "publishTimestamp": 1793756146,
           "source": {
             "type": "git",
-            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
             "commit": "d518a11df256cf6062acbd42cb2cad4d7f363daf",
             "path": "plugins/datahub-echarts"
           },
@@ -110,9 +110,9 @@
       },
       "icon": "icons/datahub-knowledge-docs.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://github.com/shanzhi-digital/shanzhi-plugin/tree/5141b1486fa1d3493d5083eea96304b24789a9c3/plugins/datahub-knowledge-docs",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/3812bef12ef4977a1dff74c68c51b0f306810000/plugins/datahub-knowledge-docs",
       "repository": {
-        "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+        "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/datahub-knowledge-docs"
       },
       "metadata": {
@@ -123,11 +123,11 @@
       "versions": [
         {
           "version": "0.3.0",
-          "publishTimestamp": 1794555468,
+          "publishTimestamp": 1794815083,
           "source": {
             "type": "git",
-            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
-            "commit": "5141b1486fa1d3493d5083eea96304b24789a9c3",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "3812bef12ef4977a1dff74c68c51b0f306810000",
             "path": "plugins/datahub-knowledge-docs"
           },
           "engines": {}
@@ -137,7 +137,7 @@
           "publishTimestamp": 1794552443,
           "source": {
             "type": "git",
-            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
             "commit": "dc0f6d1bf549da82c695fbd138688b809507ca08",
             "path": "plugins/datahub-knowledge-docs"
           },
@@ -154,9 +154,9 @@
       },
       "icon": "icons/datahub-query-enhance.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://github.com/shanzhi-digital/shanzhi-plugin/tree/95200f5ac4996c54d76ba4640ecd6d86fb4acfbc/plugins/datahub-query-enhance",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/3812bef12ef4977a1dff74c68c51b0f306810000/plugins/datahub-query-enhance",
       "repository": {
-        "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+        "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/datahub-query-enhance"
       },
       "metadata": {
@@ -167,11 +167,11 @@
       "versions": [
         {
           "version": "0.1.1",
-          "publishTimestamp": 1794564319,
+          "publishTimestamp": 1794815083,
           "source": {
             "type": "git",
-            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
-            "commit": "95200f5ac4996c54d76ba4640ecd6d86fb4acfbc",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "3812bef12ef4977a1dff74c68c51b0f306810000",
             "path": "plugins/datahub-query-enhance"
           },
           "engines": {}
@@ -186,9 +186,9 @@
         "zh": "基于 Jose AI 开源插件的善治适配版，支持 GB/T 9704 检查修复、内容修订、模板与版式处理；需 Python 依赖，宿主安装兼容性未验证。"
       },
       "author": "Jose AI",
-      "homepage": "https://github.com/shanzhi-digital/shanzhi-plugin/tree/2fa149ae8b92b909ae67d41138e8555e1cf28fc2/plugins/gongwen",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/3812bef12ef4977a1dff74c68c51b0f306810000/plugins/gongwen",
       "repository": {
-        "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+        "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/gongwen"
       },
       "metadata": {
@@ -199,11 +199,11 @@
       "versions": [
         {
           "version": "2.15.0-local.3",
-          "publishTimestamp": 1794537644,
+          "publishTimestamp": 1794815083,
           "source": {
             "type": "git",
-            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
-            "commit": "2fa149ae8b92b909ae67d41138e8555e1cf28fc2",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "3812bef12ef4977a1dff74c68c51b0f306810000",
             "path": "plugins/gongwen"
           },
           "engines": {}
