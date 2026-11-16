@@ -21,11 +21,17 @@
       },
       "development": {
         "title": { "en": "Development", "zh": "开发工具" }
+      },
+      "documents": {
+        "title": { "en": "Documents", "zh": "文档与公文" }
       }
     },
     "labels": {
       "shanzhi": {
         "title": { "en": "By Shanzhi", "zh": "善治自研" }
+      },
+      "shanzhi-adapted": {
+        "title": { "en": "Adapted by Shanzhi", "zh": "善治适配" }
       },
       "third-party": {
         "title": { "en": "Third-party", "zh": "第三方" }
@@ -44,11 +50,12 @@
       "name": "@local/datahub-echarts",
       "title": { "en": "Query result charts", "zh": "通用查询结果图表" },
       "description": {
-        "en": "Display actual query results as charts or tables. Source repository is public; catalog registration only, with installation and runtime compatibility unverified.",
-        "zh": "将真实查询结果展示为图表或表格，支持三条跟问。源码仓库已公开，当前仅登记，安装及运行兼容性未验证。"
+        "en": "Present actual business query results in one table-first result area, with multi-result tabs, chart switching, CSV/XLSX export and shared follow-up suggestions. Host installation remains unverified.",
+        "zh": "真实业务查询结果统一展示，默认表格，多表标签切换，支持图表、CSV/XLSX 导出及整轮进一步分析；宿主安装兼容性未验证。"
       },
+      "icon": "icons/datahub-echarts.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://github.com/shanzhi-digital/shanzhi-plugin/tree/d518a11df256cf6062acbd42cb2cad4d7f363daf/plugins/datahub-echarts",
+      "homepage": "https://github.com/shanzhi-digital/shanzhi-plugin/tree/47c8446a2f910a9edb55f96ebf687b1d534a59b3/plugins/datahub-echarts",
       "repository": {
         "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
         "directory": "plugins/datahub-echarts"
@@ -60,6 +67,28 @@
       },
       "versions": [
         {
+          "version": "0.10.1",
+          "publishTimestamp": 1794792536,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+            "commit": "47c8446a2f910a9edb55f96ebf687b1d534a59b3",
+            "path": "plugins/datahub-echarts"
+          },
+          "engines": {}
+        },
+        {
+          "version": "0.10.0",
+          "publishTimestamp": 1794470391,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+            "commit": "a60434dbbf2ccfc2e0557bbf2e3559eb9f75cd64",
+            "path": "plugins/datahub-echarts"
+          },
+          "engines": {}
+        },
+        {
           "version": "0.7.0",
           "publishTimestamp": 1793756146,
           "source": {
@@ -67,6 +96,115 @@
             "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
             "commit": "d518a11df256cf6062acbd42cb2cad4d7f363daf",
             "path": "plugins/datahub-echarts"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "@local/datahub-knowledge-docs",
+      "title": { "en": "Knowledge documents", "zh": "问知文档" },
+      "description": {
+        "en": "Show knowledge document lists, retrieval evidence and sources, with authorized original-document previews in the built-in reader. Host installation remains unverified.",
+        "zh": "展示知识库文件列表、检索来源与证据，支持授权原文在内置阅读器中预览；宿主安装兼容性未验证。"
+      },
+      "icon": "icons/datahub-knowledge-docs.svg",
+      "author": "Shanzhi Digital",
+      "homepage": "https://github.com/shanzhi-digital/shanzhi-plugin/tree/5141b1486fa1d3493d5083eea96304b24789a9c3/plugins/datahub-knowledge-docs",
+      "repository": {
+        "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+        "directory": "plugins/datahub-knowledge-docs"
+      },
+      "metadata": {
+        "category": "data",
+        "keywords": ["knowledge", "documents", "preview", "datahub", "问知", "文档", "原文", "检索"],
+        "labels": ["shanzhi", "public-source", "listing-only"]
+      },
+      "versions": [
+        {
+          "version": "0.3.0",
+          "publishTimestamp": 1794555468,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+            "commit": "5141b1486fa1d3493d5083eea96304b24789a9c3",
+            "path": "plugins/datahub-knowledge-docs"
+          },
+          "engines": {}
+        },
+        {
+          "version": "0.2.0",
+          "publishTimestamp": 1794552443,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+            "commit": "dc0f6d1bf549da82c695fbd138688b809507ca08",
+            "path": "plugins/datahub-knowledge-docs"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "@local/datahub-query-enhance",
+      "title": { "en": "Data query enhancement", "zh": "问数增强" },
+      "description": {
+        "en": "Guide public-skill reads and Chinese result aliases, add evidence-based insights and display metric trust status. Host installation remains unverified.",
+        "zh": "引导查询前读取公共技能、设置中文结果别名、输出数据洞察并展示指标可信状态；宿主安装兼容性未验证。"
+      },
+      "icon": "icons/datahub-query-enhance.svg",
+      "author": "Shanzhi Digital",
+      "homepage": "https://github.com/shanzhi-digital/shanzhi-plugin/tree/95200f5ac4996c54d76ba4640ecd6d86fb4acfbc/plugins/datahub-query-enhance",
+      "repository": {
+        "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+        "directory": "plugins/datahub-query-enhance"
+      },
+      "metadata": {
+        "category": "data",
+        "keywords": ["query", "datahub", "metrics", "trust", "问数", "指标", "可信", "洞察"],
+        "labels": ["shanzhi", "public-source", "listing-only"]
+      },
+      "versions": [
+        {
+          "version": "0.1.1",
+          "publishTimestamp": 1794564319,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+            "commit": "95200f5ac4996c54d76ba4640ecd6d86fb4acfbc",
+            "path": "plugins/datahub-query-enhance"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "gongwen-skill",
+      "title": { "en": "Official document workflow", "zh": "公文全流程处理专家" },
+      "description": {
+        "en": "Shanzhi adaptation of Jose AI's document workflow for GB/T 9704 checks, repair, revisions, templates and layout. Python dependencies are required; host installation remains unverified.",
+        "zh": "基于 Jose AI 开源插件的善治适配版，支持 GB/T 9704 检查修复、内容修订、模板与版式处理；需 Python 依赖，宿主安装兼容性未验证。"
+      },
+      "author": "Jose AI",
+      "homepage": "https://github.com/shanzhi-digital/shanzhi-plugin/tree/2fa149ae8b92b909ae67d41138e8555e1cf28fc2/plugins/gongwen",
+      "repository": {
+        "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+        "directory": "plugins/gongwen"
+      },
+      "metadata": {
+        "category": "documents",
+        "keywords": ["gongwen", "docx", "GB/T 9704", "公文", "格式", "模板", "修订"],
+        "labels": ["shanzhi-adapted", "public-source", "listing-only"]
+      },
+      "versions": [
+        {
+          "version": "2.15.0-local.3",
+          "publishTimestamp": 1794537644,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/shanzhi-digital/shanzhi-plugin",
+            "commit": "2fa149ae8b92b909ae67d41138e8555e1cf28fc2",
+            "path": "plugins/gongwen"
           },
           "engines": {}
         }
