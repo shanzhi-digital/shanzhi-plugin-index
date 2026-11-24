@@ -209,6 +209,39 @@
           "engines": {}
         }
       ]
+    },
+    {
+      "name": "@local/contract-sure",
+      "title": { "en": "Contract Sure", "zh": "履约无忧" },
+      "description": {
+        "en": "Connects to the Contract Sure compliance system through browser authorization (multiple accounts, revocable): contract PDF/scan recognition with verification cards, transaction reconciliation, dashboard trends and original document preview. Requires a Contract Sure server that supports plugin authorization.",
+        "zh": "通过浏览器授权连接履约无忧合同履约系统（支持多账户、可吊销），提供合同 PDF/扫描件识别核对卡、三流流水对账、履约看板趋势与原件预览；需履约系统升级到支持插件授权的版本。"
+      },
+      "icon": "icons/contract-sure.svg",
+      "author": "Shanzhi Digital",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/1fb95aaaef785bc6fcf1c193159190b7cdf43980/plugins/contract-sure",
+      "repository": {
+        "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+        "directory": "plugins/contract-sure"
+      },
+      "metadata": {
+        "category": "integrations",
+        "keywords": ["contract", "compliance", "ocr", "invoice", "transaction", "合同", "履约", "三流", "对账", "发票"],
+        "labels": ["shanzhi", "public-source", "listing-only"]
+      },
+      "versions": [
+        {
+          "version": "0.2.0",
+          "publishTimestamp": 1795528569,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "1fb95aaaef785bc6fcf1c193159190b7cdf43980",
+            "path": "plugins/contract-sure"
+          },
+          "engines": {}
+        }
+      ]
     }
   ]
 }

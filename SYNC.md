@@ -1,5 +1,20 @@
 # 插件同步记录
 
+## 2026-11-24：登记履约无忧 0.2.0
+
+新增 `@local/contract-sure` `0.2.0`，安装来源固定到 Gitee `wzx/contract-sure` 分支上的提交 `1fb95aaaef785bc6fcf1c193159190b7cdf43980`，路径 `plugins/contract-sure`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-24T05:56:09-08:00`（Unix 秒 `1795528569`）。此前本地准备过的 `0.1.0` 登记从未推送，也不再登记：旧版在插件里收账号密码换令牌，且有工具输出导致调用失败的问题。
+
+这个版本改为浏览器授权连接履约系统账户，需要履约系统升级到支持插件授权的版本；履约系统未升级时，插件会提示联系管理员。
+
+### 本次实际验证
+
+- 使用 DeepSeek Harness `0.2.2-rc.5` 所带官方 `parseMarketIndex` 校验完整索引（5个插件、8个版本），通过；`marketInstallTarget` 生成的安装参数为 `git+https://gitee.com/groundhogtang/shanzhi-plugin.git#1fb95aaaef785bc6fcf1c193159190b7cdf43980&path:/plugins/contract-sure`。
+- 在禁用 Git 凭据助手、全局/系统 Git 配置和代理的临时环境中，从 Gitee 匿名拉取该提交，核对包名、版本 `0.2.0`、`dsh.bundle.patch` 和 README 可读。
+- 插件源码测试 79 项通过。
+- 在本机 DeepSeek Harness `0.2.2-rc.5` 桌面端用同一份源码打包安装，连接本机启动的新版履约系统，走通浏览器授权并由插件以新令牌调用履约系统。多账户切换、断开吊销只在插件单元测试和后端接口脚本中验证。
+
+未验证：从「发现」页经 Gitee 安装，以及连接线上履约系统（线上尚未部署插件授权版本）。因此条目保留「公开来源、仅登记」，`engines` 保持空要求。
+
 ## 2026-11-16：迁移 Gitee 安装来源
 
 源码及安装仓库切换到 [shanzhi-plugin](https://gitee.com/groundhogtang/shanzhi-plugin)。索引仍为4个插件、7个固定版本，发布入口和同源图标保持在现有 GitHub Pages。4个当前版本固定到已核实的 Gitee 快照 `3812bef12ef4977a1dff74c68c51b0f306810000`，其 Git committer 时间为 `2026-11-16T15:44:43+08:00`，Unix 秒为 `1794815083`。
