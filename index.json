@@ -302,12 +302,12 @@
       "name": "@local/salesforge",
       "title": { "en": "SalesForge", "zh": "销售管理" },
       "description": {
-        "en": "Connects to the SalesForge sales management system through browser authorization (multiple accounts, revocable): query customers, channels, projects and amount summaries, dashboards, daily/weekly reports and sales targets in chat, draft daily reports that you submit from a card, plus 5 built-in skills (data lookup, project analysis, target tracking, customer follow-up, weekly review). Requires a SalesForge server that supports plugin authorization.",
-        "zh": "通过浏览器授权连接 SalesForge 销售管理系统（支持多账户、可吊销），在对话里查询客户、渠道、项目与金额汇总、看板、日报周报和销售目标，生成日报草稿由你在卡片上确认提交，内置查数据、项目分析、目标追踪、客户跟进、周报复盘 5 个 skill；需销售管理系统升级到支持插件授权的版本。"
+        "en": "Connects to the SalesForge sales management system through browser authorization (multiple accounts, revocable): look up and maintain customers, channels, projects, daily/weekly reports and sales targets in chat. Creates and edits are written as you; deletions and owner transfers wait for you to confirm on a card. Daily reports keep your own words, fixing only typos. 6 built-in skills (data lookup, data editing, project analysis, target tracking, customer follow-up, weekly review). Requires a SalesForge server that lets plugins maintain business data.",
+        "zh": "通过浏览器授权连接 SalesForge 销售管理系统（支持多账户、可吊销），在对话里查询和维护客户、渠道、项目、日报周报和销售目标：新建和修改以你的名义直接写入，删除和移交负责人先在卡片上由你确认；写日报照你的原话，只改错别字。内置查数据、维护数据、项目分析、目标追踪、客户跟进、周报复盘 6 个 skill；需销售管理系统升级到允许插件维护业务数据的版本。"
       },
       "icon": "icons/salesforge.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/3e42acdbc2b692f4cba36c747ae7e5dd962cde79/plugins/salesforge",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/9c415cfcdf09685a5a3b3d4ff7e370d85a34f7e4/plugins/salesforge",
       "repository": {
         "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/salesforge"
@@ -318,6 +318,17 @@
         "labels": ["shanzhi", "public-source", "listing-only"]
       },
       "versions": [
+        {
+          "version": "0.3.0",
+          "publishTimestamp": 1795591735,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "9c415cfcdf09685a5a3b3d4ff7e370d85a34f7e4",
+            "path": "plugins/salesforge"
+          },
+          "engines": {}
+        },
         {
           "version": "0.2.0",
           "publishTimestamp": 1795588081,

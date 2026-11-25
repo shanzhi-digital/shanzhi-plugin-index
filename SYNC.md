@@ -1,5 +1,21 @@
 # 插件同步记录
 
+## 2026-11-25：登记销售管理 0.3.0
+
+新增 `@local/salesforge` `0.3.0`，安装来源固定到 Gitee `main` / `wzx/contract-sure` 分支上的同一提交 `9c415cfcdf09685a5a3b3d4ff7e370d85a34f7e4`，路径 `plugins/salesforge`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-24T23:28:55-08:00`（Unix 秒 `1795591735`）。旧版本 `0.2.0`、`0.1.0` 保留原提交，插件主页改指新提交。
+
+- 销售管理 0.3.0：在对话里新建、修改客户、渠道（含联系人、部门）、项目（含梳理记录、项目分析）、日报、周计划、周报和销售目标，以用户本人的名义写入，权限和网页一样；删除和移交负责人只显示确认卡片，用户点「确认删除」「确认移交」后才执行。写日报、周报照用户原话，只改错别字。新增 skill `salesforge-edit-data`，共 6 个。
+- 需要销售管理系统允许插件令牌维护业务数据（提交 `2b39685e`，与本次插件同日部署到 132）；系统管理（用户、角色、部门、配置、产品）和「生成周报」仍不能通过插件写。
+
+### 本次实际验证
+
+- 使用宿主 `0.2.2-rc.5` 所带官方 `parseMarketIndex` 校验完整索引（6个插件、16个版本），通过；`marketInstallTarget` 生成的安装参数为 `git+https://gitee.com/groundhogtang/shanzhi-plugin.git#9c415cfcdf09685a5a3b3d4ff7e370d85a34f7e4&path:/plugins/salesforge`。
+- 在禁用 Git 凭据助手、全局/系统 Git 配置和代理的临时环境中，从 Gitee 匿名拉取该提交，核对包名、版本 `0.3.0`、`files` 含 `skills`、`write-tools.js`、`args.js`，`exports` 含 `./icon`，6 个 skill 都在，插件目录里没有「DeepSeek Harness」。
+- 插件源码测试：销售管理 102 项全部通过；销售管理系统后端 139 项测试通过。
+- 在临时 profile 的宿主 web 端实测：本地模拟模型调用 `sales_delete` 后显示「删除 1 条日报」确认卡，确认前模拟后端没有收到删除请求，点「确认删除」后才删除，卡片变为「已删除」，刷新后保持；调用 `sales_save_work_report` 改拜访人，按整条记录写回。
+
+未验证：从「发现」页经 Gitee 安装；真模型的调用效果。条目保留「公开来源、仅登记」，`engines` 保持空要求。
+
 ## 2026-11-25：登记问知文档 0.3.1、问数增强 0.1.2
 
 新增 `@local/datahub-knowledge-docs` `0.3.1` 和 `@local/datahub-query-enhance` `0.1.2`，安装来源固定到 Gitee `main` / `wzx/contract-sure` 分支上的同一提交 `0f519ecfb343df1ee558e7a30f523bb07853edc1`，路径分别是 `plugins/datahub-knowledge-docs`、`plugins/datahub-query-enhance`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-24T22:34:03-08:00`（Unix 秒 `1795588443`）。旧版本（`0.3.0`、`0.2.0`、`0.1.1`）保留原提交，两个插件主页改指新提交。
