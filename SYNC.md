@@ -1,5 +1,21 @@
 # 插件同步记录
 
+## 2026-11-25：登记问知文档 0.3.1、问数增强 0.1.2
+
+新增 `@local/datahub-knowledge-docs` `0.3.1` 和 `@local/datahub-query-enhance` `0.1.2`，安装来源固定到 Gitee `main` / `wzx/contract-sure` 分支上的同一提交 `0f519ecfb343df1ee558e7a30f523bb07853edc1`，路径分别是 `plugins/datahub-knowledge-docs`、`plugins/datahub-query-enhance`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-24T22:34:03-08:00`（Unix 秒 `1795588443`）。旧版本（`0.3.0`、`0.2.0`、`0.1.1`）保留原提交，两个插件主页改指新提交。
+
+- 问知文档 `0.3.1`：`peerDependencies` 中 3 个 `@deepseek-ai/dsh-*` 依赖从精确版本 `"0.2.2-rc.1"` 放宽为 `">=0.2.0-0"`，并补充 `peerDependenciesMeta` (`optional: true`)，解决 DSH `0.2.2-rc.5` 安装被版本校验拦截的问题。
+- 问数增强 `0.1.2`：`peerDependencies` 中 `@deepseek-ai/dsh-llm` 从精确版本 `"0.2.2-rc.1"` 放宽为 `">=0.2.0-0"`，并补充 `peerDependenciesMeta` (`optional: true`)。
+
+### 本次实际验证
+
+- 使用宿主 `0.2.2-rc.5` 所带官方 `parseMarketIndex` 校验完整索引（6个插件、15个版本），通过；`marketInstallTarget` 生成的安装参数为 `git+https://gitee.com/groundhogtang/shanzhi-plugin.git#0f519ecfb343df1ee558e7a30f523bb07853edc1&path:/plugins/datahub-knowledge-docs` 和 `…&path:/plugins/datahub-query-enhance`。
+- 在禁用 Git 凭据助手、全局/系统 Git 配置和代理的临时环境中，从 Gitee 匿名拉取该提交，核对两个包的包名、版本（`0.3.1`、`0.1.2`）、`peerDependencies` 为 `>=0.2.0-0` 与 `peerDependenciesMeta` 可选声明。
+- 插件源码测试：问知文档 52 项通过；问数增强 30 项通过、2 项跳过（需未压缩宿主 asar）。
+- 在隔离临时 `DSH_HOME` 中使用本机 DSH `0.2.2-rc.5` CLI 对全部 6 个插件打包并执行 `dsh plugin add`，全部安装通过且无 peer 警告。
+
+未验证：从「发现」页经 Gitee 安装以及真实 DataHub 问知/问数 MCP 运行链路。条目保留「公开来源、仅登记」，`engines` 保持空要求。
+
 ## 2026-11-25：登记履约无忧 0.3.1、销售管理 0.2.0
 
 新增 `@local/contract-sure` `0.3.1` 和 `@local/salesforge` `0.2.0`，安装来源固定到 Gitee `wzx/contract-sure` 分支上的同一提交 `3e42acdbc2b692f4cba36c747ae7e5dd962cde79`，路径分别是 `plugins/contract-sure`、`plugins/salesforge`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-24T22:28:01-08:00`（Unix 秒 `1795588081`）。旧版本保留原提交，两个插件主页改指新提交。目录简介去掉了「DeepSeek Harness」，只写小智办公。

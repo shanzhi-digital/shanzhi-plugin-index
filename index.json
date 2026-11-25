@@ -110,7 +110,7 @@
       },
       "icon": "icons/datahub-knowledge-docs.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/3812bef12ef4977a1dff74c68c51b0f306810000/plugins/datahub-knowledge-docs",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/0f519ecfb343df1ee558e7a30f523bb07853edc1/plugins/datahub-knowledge-docs",
       "repository": {
         "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/datahub-knowledge-docs"
@@ -121,6 +121,17 @@
         "labels": ["shanzhi", "public-source", "listing-only"]
       },
       "versions": [
+        {
+          "version": "0.3.1",
+          "publishTimestamp": 1795588443,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "0f519ecfb343df1ee558e7a30f523bb07853edc1",
+            "path": "plugins/datahub-knowledge-docs"
+          },
+          "engines": {}
+        },
         {
           "version": "0.3.0",
           "publishTimestamp": 1794815083,
@@ -154,7 +165,7 @@
       },
       "icon": "icons/datahub-query-enhance.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/3812bef12ef4977a1dff74c68c51b0f306810000/plugins/datahub-query-enhance",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/0f519ecfb343df1ee558e7a30f523bb07853edc1/plugins/datahub-query-enhance",
       "repository": {
         "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/datahub-query-enhance"
@@ -165,6 +176,17 @@
         "labels": ["shanzhi", "public-source", "listing-only"]
       },
       "versions": [
+        {
+          "version": "0.1.2",
+          "publishTimestamp": 1795588443,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "0f519ecfb343df1ee558e7a30f523bb07853edc1",
+            "path": "plugins/datahub-query-enhance"
+          },
+          "engines": {}
+        },
         {
           "version": "0.1.1",
           "publishTimestamp": 1794815083,
