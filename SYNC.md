@@ -1,5 +1,21 @@
 # 插件同步记录
 
+## 2026-11-25：登记履约无忧 0.3.0、销售管理 0.1.0
+
+新增 `@local/contract-sure` `0.3.0` 和新插件 `@local/salesforge` `0.1.0`，安装来源固定到 Gitee `wzx/contract-sure` 分支上的同一提交 `2e588c7302283dcacedceff32a162213aa224210`，路径分别是 `plugins/contract-sure`、`plugins/salesforge`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-24T20:14:51-08:00`（Unix 秒 `1795580091`）。履约无忧的 `0.2.1`、`0.2.0` 保留原提交，插件主页改指新提交。`icons/contract-sure.svg` 换成插件里的新图标，新增 `icons/salesforge.svg`。
+
+- 履约无忧 0.3.0：插件页「试试这样问」改成渐变背景加毛玻璃卡片的面板，换了新图标；内置 5 个 skill（导入并分析合同、回款节点跟进、三流核对、履约月报、合同风险排查）。
+- 销售管理 0.1.0：浏览器授权连接 SalesForge 销售管理系统，令牌只读；8 个只读工具查询客户、渠道、项目与金额汇总、看板、日报周报和销售目标；内置 5 个 skill（查数据、项目分析、目标完成追踪、客户跟进提醒、周报复盘）。销售管理系统已于北京时间2026-11-25中午部署支持插件授权的版本。
+
+### 本次实际验证
+
+- 使用 DeepSeek Harness `0.2.2-rc.5` 所带官方 `parseMarketIndex` 校验完整索引（6个插件、11个版本），通过；`marketInstallTarget` 生成的安装参数为 `git+https://gitee.com/groundhogtang/shanzhi-plugin.git#2e588c7302283dcacedceff32a162213aa224210&path:/plugins/contract-sure` 和 `…&path:/plugins/salesforge`。
+- 在禁用 Git 凭据助手、系统 Git 配置和代理的临时环境中，从 Gitee 匿名拉取该提交，核对两个包的包名、版本、`files` 含 `skills`、`exports` 含 `./icon`。
+- 插件源码测试：履约无忧 93 项、销售管理 85 项全部通过。
+- 线上销售管理系统 `plugin-authorize/start` 返回200，确认页地址正确。
+
+未验证：从「发现」页经 Gitee 安装；真模型按描述自动加载 skill。条目保留「公开来源、仅登记」，`engines` 保持空要求。
+
 ## 2026-11-24：登记履约无忧 0.2.1
 
 新增 `@local/contract-sure` `0.2.1`，安装来源固定到 Gitee `wzx/contract-sure` 分支上的提交 `1f279d26dc71aa7860b9250b610a24e624846882`，路径 `plugins/contract-sure`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-24T17:32:40-08:00`（Unix 秒 `1795570360`）。`0.2.0` 保留原提交，插件主页改指 `0.2.1` 的源码。

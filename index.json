@@ -214,22 +214,33 @@
       "name": "@local/contract-sure",
       "title": { "en": "Contract Sure", "zh": "履约无忧" },
       "description": {
-        "en": "Connects to the Contract Sure compliance system through browser authorization (multiple accounts, revocable): contract PDF/scan recognition with verification cards, transaction reconciliation, dashboard trends and original document preview. Requires a Contract Sure server that supports plugin authorization.",
-        "zh": "通过浏览器授权连接履约无忧合同履约系统（支持多账户、可吊销），提供合同 PDF/扫描件识别核对卡、三流流水对账、履约看板趋势与原件预览；需履约系统升级到支持插件授权的版本。"
+        "en": "Connects to the Contract Sure compliance system through browser authorization (multiple accounts, revocable): contract PDF/scan recognition with verification cards, transaction reconciliation, dashboard trends and original document preview, plus 5 built-in skills (contract import and risk analysis, payment follow-up, reconciliation, monthly report, risk review). Requires a Contract Sure server that supports plugin authorization.",
+        "zh": "通过浏览器授权连接履约无忧合同履约系统（支持多账户、可吊销），提供合同 PDF/扫描件识别核对卡、三流流水对账、履约看板趋势与原件预览，内置导入分析合同、回款跟进、三流核对、履约月报、风险排查 5 个 skill；需履约系统升级到支持插件授权的版本。"
       },
       "icon": "icons/contract-sure.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/1f279d26dc71aa7860b9250b610a24e624846882/plugins/contract-sure",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/2e588c7302283dcacedceff32a162213aa224210/plugins/contract-sure",
       "repository": {
         "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/contract-sure"
       },
       "metadata": {
         "category": "integrations",
-        "keywords": ["contract", "compliance", "ocr", "invoice", "transaction", "合同", "履约", "三流", "对账", "发票"],
+        "keywords": ["contract", "compliance", "ocr", "invoice", "transaction", "合同", "履约", "三流", "对账", "发票", "skill"],
         "labels": ["shanzhi", "public-source", "listing-only"]
       },
       "versions": [
+        {
+          "version": "0.3.0",
+          "publishTimestamp": 1795580091,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "2e588c7302283dcacedceff32a162213aa224210",
+            "path": "plugins/contract-sure"
+          },
+          "engines": {}
+        },
         {
           "version": "0.2.1",
           "publishTimestamp": 1795570360,
@@ -249,6 +260,39 @@
             "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
             "commit": "1fb95aaaef785bc6fcf1c193159190b7cdf43980",
             "path": "plugins/contract-sure"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "@local/salesforge",
+      "title": { "en": "SalesForge", "zh": "销售管理" },
+      "description": {
+        "en": "Connects to the SalesForge sales management system through browser authorization (multiple accounts, revocable, read-only): query customers, channels, projects and amount summaries, dashboards, daily/weekly reports and sales targets in chat, plus 5 built-in skills (data lookup, project analysis, target tracking, customer follow-up, weekly review). Requires a SalesForge server that supports plugin authorization.",
+        "zh": "通过浏览器授权连接 SalesForge 销售管理系统（支持多账户、可吊销，令牌只读），在对话里查询客户、渠道、项目与金额汇总、看板、日报周报和销售目标，内置查数据、项目分析、目标追踪、客户跟进、周报复盘 5 个 skill；需销售管理系统升级到支持插件授权的版本。"
+      },
+      "icon": "icons/salesforge.svg",
+      "author": "Shanzhi Digital",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/2e588c7302283dcacedceff32a162213aa224210/plugins/salesforge",
+      "repository": {
+        "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+        "directory": "plugins/salesforge"
+      },
+      "metadata": {
+        "category": "integrations",
+        "keywords": ["sales", "crm", "opportunity", "target", "report", "skill", "销售", "客户", "商机", "目标", "周报"],
+        "labels": ["shanzhi", "public-source", "listing-only"]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1795580091,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "2e588c7302283dcacedceff32a162213aa224210",
+            "path": "plugins/salesforge"
           },
           "engines": {}
         }
