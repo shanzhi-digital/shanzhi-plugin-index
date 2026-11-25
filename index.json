@@ -395,7 +395,7 @@
       },
       "icon": "icons/echomind.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/602e7d51223a99e7aa6a8b48a4fa46a806ba05f9/plugins/echomind",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/d5fceb4e9bd74ca22b5f400dd254691b57acce91/plugins/echomind",
       "repository": {
         "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/echomind"
@@ -406,6 +406,17 @@
         "labels": ["shanzhi", "public-source", "listing-only"]
       },
       "versions": [
+        {
+          "version": "0.1.1",
+          "publishTimestamp": 1795620044,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "d5fceb4e9bd74ca22b5f400dd254691b57acce91",
+            "path": "plugins/echomind"
+          },
+          "engines": {}
+        },
         {
           "version": "0.1.0",
           "publishTimestamp": 1795601507,

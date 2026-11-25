@@ -1,5 +1,19 @@
 # 插件同步记录
 
+## 2026-11-25：登记 EchoMind 会议纪要 0.1.1
+
+新增 `@local/echomind` `0.1.1`，安装来源固定到 Gitee `main` 分支上的提交 `d5fceb4e9bd74ca22b5f400dd254691b57acce91`，路径 `plugins/echomind`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-25T07:20:44-08:00`（Unix 秒 `1795620044`）。旧版本 `0.1.0` 保留原提交 `602e7d51223a99e7aa6a8b48a4fa46a806ba05f9`，插件主页改指新提交。
+
+- EchoMind 会议纪要 `0.1.1`：`transcriberManager` 自动探测并校验本机独立版 `EchoMind.app/Contents/Resources/models`、`~/Applications/EchoMind.app/Contents/Resources/models` 及 `com.evanbyte.echomind/models`（Windows 同步兼容）中已就绪的 4 个离线语音模型，已安装独立版 EchoMind 的电脑无需重新从 GitHub 下载，彻底解决旧版 `EchoMind.app` 附带 `echomind-transcribe` 下载 2026-11-19 上游新版 CAM++ 模型触发 SHA-256 校验失败的问题；`binaryManager` 同步支持 `~/Applications/EchoMind.app` 查找。
+
+### 本次实际验证
+
+- 使用宿主 `0.2.2-rc.5` 所带官方 `parseMarketIndex` 校验完整索引（7个插件、21个版本），通过；`marketInstallTarget` 生成的安装参数为 `git+https://gitee.com/groundhogtang/shanzhi-plugin.git#d5fceb4e9bd74ca22b5f400dd254691b57acce91&path:/plugins/echomind`。
+- 插件源码测试：`node --check client.js && npm test` 24/24 通过（含空白/3/4/哈希不匹配 DSH 模型目录自动回退复用 `EchoMind.app/Contents/Resources/models` 的单测）。
+- 真机探针验证：在空白临时 DSH 数据目录下，直接调用本机打包的 `EchoMind.app/Contents/MacOS/echomind-transcribe`，`checkModels()` 自动识别并复用 `EchoMind.app/Contents/Resources/models`，返回 `ready: true, downloadBytes: 0, modelsCount: 4`。
+
+未验证：Gitee 镜像同步至 `d5fceb4` 后的匿名拉取、同事电脑从「发现」页更新至 `0.1.1` 及无独立版 `EchoMind.app` 环境的镜像安装。条目保留「公开来源、仅登记」，`engines` 保持空要求。
+
 ## 2026-11-25：登记 EchoMind 会议纪要 0.1.0
 
 新增插件 `@local/echomind` `0.1.0`（图标 `icons/echomind.svg`），安装来源固定到 Gitee `main` 分支上的提交 `602e7d51223a99e7aa6a8b48a4fa46a806ba05f9`，路径 `plugins/echomind`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-25T02:11:47-08:00`（Unix 秒 `1795601507`）。
