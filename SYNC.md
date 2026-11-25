@@ -1,5 +1,21 @@
 # 插件同步记录
 
+## 2026-11-25：登记履约无忧 0.4.0
+
+新增 `@local/contract-sure` `0.4.0`，安装来源固定到 Gitee `main` / `wzx/contract-sure` 分支上的提交 `8b77f0f702d8b07afc1e6283d1a709ea47d3ad70`（合并 `wzx/contract-auto-no` 的提交；插件目录内容与功能提交 `30a1d31` 相同），路径 `plugins/contract-sure`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-25T01:38:51-08:00`（Unix 秒 `1795599531`）。旧版本 `0.3.1`、`0.3.0`、`0.2.1`、`0.2.0` 保留原提交，插件主页改指新提交。
+
+- 履约无忧 `0.4.0`：合同识别核对卡显示预计合同编号（前缀-年份-序号，按签约日期的年份），纸质合同上的编号作为「原合同编号」保存；入库前预演资金流水和发票的匹配，显示拆单和顺带调整的合同；户名疑似同一家时由用户在卡片上确认；入库后显示最终编号和匹配结果。
+- 需要履约系统升级到支持合同自动编号和户名先到先配的版本（提交 `78575f6`，已于同日部署到 132，生产库迁移已执行，匹配规则仍为旧规则，由管理员核对对比报告后切换）。
+
+### 本次实际验证
+
+- 使用宿主 `0.2.2-rc.5` 所带官方 `parseMarketIndex` 校验完整索引（6个插件、19个版本），通过；`marketInstallTarget` 生成的安装参数为 `git+https://gitee.com/groundhogtang/shanzhi-plugin.git#8b77f0f702d8b07afc1e6283d1a709ea47d3ad70&path:/plugins/contract-sure`。
+- 在禁用 Git 凭据助手、全局/系统 Git 配置和代理的临时环境中，从 Gitee 匿名拉取该提交，核对包名、版本 `0.4.0`、`files` 清单里的文件都在、5 个 skill 都在，插件目录里没有「DeepSeek Harness」。
+- 插件源码测试：履约无忧 102 项全部通过（合并后在 `main` 上复跑）。履约系统后端 113 项测试通过，网页 lint 与构建通过。
+- 履约系统部署后：后端正常启动，网页为新构建，新接口未登录时返回 401；登录后的页面未在线上验证。
+
+未验证：从「发现」页经 Gitee 安装；真模型的调用效果；线上登录后的核对卡流程。条目保留「公开来源、仅登记」，`engines` 保持空要求。
+
 ## 2026-11-25：登记问数图表 0.10.2、销售管理 0.3.1
 
 新增 `@local/datahub-echarts` `0.10.2` 和 `@local/salesforge` `0.3.1`，安装来源固定到 Gitee `main` / `wzx/contract-sure` 分支上的同一提交 `2198ed52818d57ed499630516fd641cabfd92d09`，路径分别是 `plugins/datahub-echarts`、`plugins/salesforge`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-25T00:33:23-08:00`（Unix 秒 `1795595603`）。旧版本保留原提交，两个插件主页改指新提交。
