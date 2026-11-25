@@ -385,6 +385,39 @@
           "engines": {}
         }
       ]
+    },
+    {
+      "name": "@local/echomind",
+      "title": { "en": "EchoMind Meeting Minutes", "zh": "EchoMind 会议纪要" },
+      "description": {
+        "en": "Connects to EchoMind via Feishu browser authorization (multiple accounts, revocable): local dual-track real-time recording, offline speech transcription and speaker voiceprint recognition, evidence-grounded meeting minutes and dual-track audio playback, todo confirmation cards for Feishu tasks, and DataHub meeting-minutes knowledge base sync. 5 built-in skills (live meeting, review and push, search and trace, import audio, cross-system follow-up). Requires native capture/transcribe components and local offline speech models.",
+        "zh": "通过飞书浏览器授权连接 EchoMind（支持多账户、可吊销），提供本机双轨实时录音、离线语音转写与声纹识别、带出处结构化纪要与时间轴双轨原声回放、待办确认卡片推送飞书任务及 DataHub 会议纪要知识库同步；内置实时会议、纪要审阅推飞书、原话检索溯源、外部音频导入、跨系统跟进 5 个 skill；首次使用需就绪本机录音/转写组件与离线语音模型。"
+      },
+      "icon": "icons/echomind.svg",
+      "author": "Shanzhi Digital",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/602e7d51223a99e7aa6a8b48a4fa46a806ba05f9/plugins/echomind",
+      "repository": {
+        "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+        "directory": "plugins/echomind"
+      },
+      "metadata": {
+        "category": "productivity",
+        "keywords": ["meeting", "minutes", "recording", "transcript", "voiceprint", "feishu", "skill", "会议", "纪要", "录音", "转写", "声纹", "待办", "飞书"],
+        "labels": ["shanzhi", "public-source", "listing-only"]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1795601507,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "602e7d51223a99e7aa6a8b48a4fa46a806ba05f9",
+            "path": "plugins/echomind"
+          },
+          "engines": {}
+        }
+      ]
     }
   ]
 }

@@ -1,5 +1,20 @@
 # 插件同步记录
 
+## 2026-11-25：登记 EchoMind 会议纪要 0.1.0
+
+新增插件 `@local/echomind` `0.1.0`（图标 `icons/echomind.svg`），安装来源固定到 Gitee `main` 分支上的提交 `602e7d51223a99e7aa6a8b48a4fa46a806ba05f9`，路径 `plugins/echomind`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-25T02:11:47-08:00`（Unix 秒 `1795601507`）。
+
+- EchoMind 会议纪要 `0.1.0`：通过飞书浏览器 PKCE 授权连接 EchoMind（支持多账户、可吊销）；本机双轨实时录音（全局浮条与侧栏入口）、离线转写与声纹识别（音频与逐字稿不出本机）、内置零依赖确定性纪要引擎与时间轴双轨原声回放、对话尾部交互卡片（含待办确认推送飞书任务，推送/声纹/公司管理物理隔离在 RPC 上）及 DataHub「会议纪要」知识库同步；内置 5 个业务 skill。
+
+### 本次实际验证
+
+- 使用宿主 `0.2.2-rc.5` 所带官方 `parseMarketIndex` 校验完整索引（7个插件、20个版本），通过；`marketInstallTarget` 生成的安装参数为 `git+https://gitee.com/groundhogtang/shanzhi-plugin.git#602e7d51223a99e7aa6a8b48a4fa46a806ba05f9&path:/plugins/echomind`。
+- 核对提交 `602e7d51223a99e7aa6a8b48a4fa46a806ba05f9` 的 `plugins/echomind/package.json`：包名 `@local/echomind`、版本 `0.1.0`、`files` 清单全部文件齐全、`skills`（5 个）齐全、`exports` 含 `./icon`，且插件目录里没有「DeepSeek Harness」。
+- 插件源码测试：`node --check client.js && npm test` 23/23 通过（含真实 DSH `tool/result` 嵌套格式与 `TurnTail` `turn.data.get("echomind")` 投影单测、RPC 接缝单测、Strict Cordis Proxy 单测、无损 JSON 单测、Skill 契约单测）。
+- 本机桌面端实测：飞书 OAuth 登录、声纹查询、双轨录音、4/4 离线语音模型就绪、本机离线转写、声纹匹配、纪要生成与 DataHub 知识库同步已走通（`602e7d5` 同时修复了对话尾部待办确认卡片未渲染的 `TurnTail` 投影缺陷）。
+
+未验证：Gitee 镜像 `groundhogtang/shanzhi-plugin` 同步至 `602e7d5` 后的匿名拉取、从「发现」页经 Gitee 首次安装与 Pages 线上生效后的拉取。条目保留「公开来源、仅登记」，`engines` 保持空要求。
+
 ## 2026-11-25：登记履约无忧 0.4.0
 
 新增 `@local/contract-sure` `0.4.0`，安装来源固定到 Gitee `main` / `wzx/contract-sure` 分支上的提交 `8b77f0f702d8b07afc1e6283d1a709ea47d3ad70`（合并 `wzx/contract-auto-no` 的提交；插件目录内容与功能提交 `30a1d31` 相同），路径 `plugins/contract-sure`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-25T01:38:51-08:00`（Unix 秒 `1795599531`）。旧版本 `0.3.1`、`0.3.0`、`0.2.1`、`0.2.0` 保留原提交，插件主页改指新提交。
