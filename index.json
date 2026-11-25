@@ -5,8 +5,8 @@
     "zh": "善治插件目录"
   },
   "description": {
-    "en": "Shanzhi plugins for Xiaozhi Office and DeepSeek Harness. Listed sources are public; installation and runtime compatibility remain unverified.",
-    "zh": "面向小智办公和 DeepSeek Harness 的善治插件目录；源码已公开，安装及运行兼容性尚未验证。"
+    "en": "Shanzhi plugins for Xiaozhi Office. Listed sources are public; installation and runtime compatibility remain unverified.",
+    "zh": "面向小智办公的善治插件目录；源码已公开，安装及运行兼容性尚未验证。"
   },
   "metadata": {
     "categories": {
@@ -219,7 +219,7 @@
       },
       "icon": "icons/contract-sure.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/2e588c7302283dcacedceff32a162213aa224210/plugins/contract-sure",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/3e42acdbc2b692f4cba36c747ae7e5dd962cde79/plugins/contract-sure",
       "repository": {
         "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/contract-sure"
@@ -230,6 +230,17 @@
         "labels": ["shanzhi", "public-source", "listing-only"]
       },
       "versions": [
+        {
+          "version": "0.3.1",
+          "publishTimestamp": 1795588081,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "3e42acdbc2b692f4cba36c747ae7e5dd962cde79",
+            "path": "plugins/contract-sure"
+          },
+          "engines": {}
+        },
         {
           "version": "0.3.0",
           "publishTimestamp": 1795580091,
@@ -269,12 +280,12 @@
       "name": "@local/salesforge",
       "title": { "en": "SalesForge", "zh": "销售管理" },
       "description": {
-        "en": "Connects to the SalesForge sales management system through browser authorization (multiple accounts, revocable, read-only): query customers, channels, projects and amount summaries, dashboards, daily/weekly reports and sales targets in chat, plus 5 built-in skills (data lookup, project analysis, target tracking, customer follow-up, weekly review). Requires a SalesForge server that supports plugin authorization.",
-        "zh": "通过浏览器授权连接 SalesForge 销售管理系统（支持多账户、可吊销，令牌只读），在对话里查询客户、渠道、项目与金额汇总、看板、日报周报和销售目标，内置查数据、项目分析、目标追踪、客户跟进、周报复盘 5 个 skill；需销售管理系统升级到支持插件授权的版本。"
+        "en": "Connects to the SalesForge sales management system through browser authorization (multiple accounts, revocable): query customers, channels, projects and amount summaries, dashboards, daily/weekly reports and sales targets in chat, draft daily reports that you submit from a card, plus 5 built-in skills (data lookup, project analysis, target tracking, customer follow-up, weekly review). Requires a SalesForge server that supports plugin authorization.",
+        "zh": "通过浏览器授权连接 SalesForge 销售管理系统（支持多账户、可吊销），在对话里查询客户、渠道、项目与金额汇总、看板、日报周报和销售目标，生成日报草稿由你在卡片上确认提交，内置查数据、项目分析、目标追踪、客户跟进、周报复盘 5 个 skill；需销售管理系统升级到支持插件授权的版本。"
       },
       "icon": "icons/salesforge.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/2e588c7302283dcacedceff32a162213aa224210/plugins/salesforge",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/3e42acdbc2b692f4cba36c747ae7e5dd962cde79/plugins/salesforge",
       "repository": {
         "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/salesforge"
@@ -285,6 +296,17 @@
         "labels": ["shanzhi", "public-source", "listing-only"]
       },
       "versions": [
+        {
+          "version": "0.2.0",
+          "publishTimestamp": 1795588081,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "3e42acdbc2b692f4cba36c747ae7e5dd962cde79",
+            "path": "plugins/salesforge"
+          },
+          "engines": {}
+        },
         {
           "version": "0.1.0",
           "publishTimestamp": 1795580091,

@@ -1,5 +1,22 @@
 # 插件同步记录
 
+## 2026-11-25：登记履约无忧 0.3.1、销售管理 0.2.0
+
+新增 `@local/contract-sure` `0.3.1` 和 `@local/salesforge` `0.2.0`，安装来源固定到 Gitee `wzx/contract-sure` 分支上的同一提交 `3e42acdbc2b692f4cba36c747ae7e5dd962cde79`，路径分别是 `plugins/contract-sure`、`plugins/salesforge`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-24T22:28:01-08:00`（Unix 秒 `1795588081`）。旧版本保留原提交，两个插件主页改指新提交。目录简介去掉了「DeepSeek Harness」，只写小智办公。
+
+- 销售管理 0.2.0：新增 `sales_draft_work_report`，在对话里生成「工作日报草稿」卡片，用户核对后点「提交日报」才新建日报；需要销售管理系统允许插件令牌新建日报（与本次插件同日部署）。
+- 履约无忧 0.3.1：签订日期识别规则补全，核对卡把空的签订日期标红并提示签字页识别结果。
+- 两个插件里的「DeepSeek Harness」改为「小智办公」，授权时登记的客户端名称变成「小智办公 · 履约无忧」「小智办公 · 销售管理」。
+
+### 本次实际验证
+
+- 使用宿主 `0.2.2-rc.5` 所带官方 `parseMarketIndex` 校验完整索引（6个插件、13个版本），通过；`marketInstallTarget` 生成的安装参数为 `git+https://gitee.com/groundhogtang/shanzhi-plugin.git#3e42acdbc2b692f4cba36c747ae7e5dd962cde79&path:/plugins/contract-sure` 和 `…&path:/plugins/salesforge`。
+- 在禁用 Git 凭据助手、系统 Git 配置和代理的临时环境中，从 Gitee 匿名拉取该提交，核对两个包的包名、版本（`0.3.1`、`0.2.0`）、`files` 含 `skills`、`exports` 含 `./icon`，两个插件目录里没有「DeepSeek Harness」。
+- 插件源码测试：履约无忧 96 项、销售管理 89 项全部通过。
+- 销售管理 0.2.0 在临时 profile 的宿主 web 端实测：本地模拟模型调用 `sales_draft_work_report`，卡片显示、改拜访人和总结、点「提交日报」写入本地模拟的销售后端，刷新后卡片仍显示已提交的内容；宿主重启后旧草稿提示失效；暗色主题正常。
+
+未验证：从「发现」页经 Gitee 安装；真模型的调用效果。条目保留「公开来源、仅登记」，`engines` 保持空要求。
+
 ## 2026-11-25：登记履约无忧 0.3.0、销售管理 0.1.0
 
 新增 `@local/contract-sure` `0.3.0` 和新插件 `@local/salesforge` `0.1.0`，安装来源固定到 Gitee `wzx/contract-sure` 分支上的同一提交 `2e588c7302283dcacedceff32a162213aa224210`，路径分别是 `plugins/contract-sure`、`plugins/salesforge`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-24T20:14:51-08:00`（Unix 秒 `1795580091`）。履约无忧的 `0.2.1`、`0.2.0` 保留原提交，插件主页改指新提交。`icons/contract-sure.svg` 换成插件里的新图标，新增 `icons/salesforge.svg`。
