@@ -55,7 +55,7 @@
       },
       "icon": "icons/datahub-echarts.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/3812bef12ef4977a1dff74c68c51b0f306810000/plugins/datahub-echarts",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/2198ed52818d57ed499630516fd641cabfd92d09/plugins/datahub-echarts",
       "repository": {
         "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/datahub-echarts"
@@ -66,6 +66,17 @@
         "labels": ["shanzhi", "public-source", "listing-only"]
       },
       "versions": [
+        {
+          "version": "0.10.2",
+          "publishTimestamp": 1795595603,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "2198ed52818d57ed499630516fd641cabfd92d09",
+            "path": "plugins/datahub-echarts"
+          },
+          "engines": {}
+        },
         {
           "version": "0.10.1",
           "publishTimestamp": 1794815083,
@@ -307,7 +318,7 @@
       },
       "icon": "icons/salesforge.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/9c415cfcdf09685a5a3b3d4ff7e370d85a34f7e4/plugins/salesforge",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/2198ed52818d57ed499630516fd641cabfd92d09/plugins/salesforge",
       "repository": {
         "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/salesforge"
@@ -318,6 +329,17 @@
         "labels": ["shanzhi", "public-source", "listing-only"]
       },
       "versions": [
+        {
+          "version": "0.3.1",
+          "publishTimestamp": 1795595603,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "2198ed52818d57ed499630516fd641cabfd92d09",
+            "path": "plugins/salesforge"
+          },
+          "engines": {}
+        },
         {
           "version": "0.3.0",
           "publishTimestamp": 1795591735,

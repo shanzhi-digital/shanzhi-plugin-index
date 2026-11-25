@@ -1,5 +1,24 @@
 # 插件同步记录
 
+## 2026-11-25：登记问数图表 0.10.2、销售管理 0.3.1
+
+新增 `@local/datahub-echarts` `0.10.2` 和 `@local/salesforge` `0.3.1`，安装来源固定到 Gitee `main` / `wzx/contract-sure` 分支上的同一提交 `2198ed52818d57ed499630516fd641cabfd92d09`，路径分别是 `plugins/datahub-echarts`、`plugins/salesforge`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-25T00:33:23-08:00`（Unix 秒 `1795595603`）。旧版本保留原提交，两个插件主页改指新提交。
+
+这一版修的是几台电脑上反复出现的三种工具调用报错：
+
+- 问数图表 `0.10.2`：结果来自销售管理等非 DataHub 工具时，图表卡片不再输出值为 undefined 的 `datasourceId`，宿主不再报「value is not lossless JSON」。
+- 问数图表 `0.10.2`：模型填错 `sourceCallId` 时，本轮只有一个表格来源就直接用它；有多个来源时，报错里列出可选的调用 ID，模型可以照着重试。
+- 销售管理 `0.3.1`：`sales_query_projects` 汇总时也能按客户、渠道、预计签约日期和跟进天数筛选（扫描列表后在本地汇总），不再报「只能在 mode="list" 时使用」；排序和分页参数仍只用于列表。
+
+### 本次实际验证
+
+- 使用宿主 `0.2.2-rc.5` 所带官方 `parseMarketIndex` 校验完整索引（6个插件、18个版本），通过；`marketInstallTarget` 生成的安装参数为 `git+https://gitee.com/groundhogtang/shanzhi-plugin.git#2198ed52818d57ed499630516fd641cabfd92d09&path:/plugins/salesforge`（图表同理）。
+- 在禁用 Git 凭据助手、全局/系统 Git 配置和代理的临时环境中，从 Gitee 匿名拉取该提交，核对两个包的包名和版本（`0.10.2`、`0.3.1`），以及两处修复都在源码里。
+- 插件源码测试：销售管理 102 项全部通过；问数图表 `results`、`core`、`event-projection` 共 29 项通过（`export.test.js` 需要打包依赖，未运行）。新增测试按宿主的规则检查非 DataHub 来源的图表输出是无损 JSON。
+- 在临时 profile 的宿主 web 端实测：本地模拟模型先查项目列表，再故意用编造的 `sourceCallId` 调 `query_result_chart`，表格卡片正常显示 3 行 13 列；再按 2026-11 的预计签约日期汇总，返回 2 个项目、合计 230.5 万元，没有报错。
+
+未验证：从「发现」页经 Gitee 安装；真模型的调用效果。条目保留「公开来源、仅登记」，`engines` 保持空要求。
+
 ## 2026-11-25：登记销售管理 0.3.0
 
 新增 `@local/salesforge` `0.3.0`，安装来源固定到 Gitee `main` / `wzx/contract-sure` 分支上的同一提交 `9c415cfcdf09685a5a3b3d4ff7e370d85a34f7e4`，路径 `plugins/salesforge`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-24T23:28:55-08:00`（Unix 秒 `1795591735`）。旧版本 `0.2.0`、`0.1.0` 保留原提交，插件主页改指新提交。
