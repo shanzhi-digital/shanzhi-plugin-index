@@ -219,7 +219,7 @@
       },
       "icon": "icons/contract-sure.svg",
       "author": "Shanzhi Digital",
-      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/1fb95aaaef785bc6fcf1c193159190b7cdf43980/plugins/contract-sure",
+      "homepage": "https://gitee.com/groundhogtang/shanzhi-plugin/tree/1f279d26dc71aa7860b9250b610a24e624846882/plugins/contract-sure",
       "repository": {
         "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
         "directory": "plugins/contract-sure"
@@ -230,6 +230,17 @@
         "labels": ["shanzhi", "public-source", "listing-only"]
       },
       "versions": [
+        {
+          "version": "0.2.1",
+          "publishTimestamp": 1795570360,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/groundhogtang/shanzhi-plugin.git",
+            "commit": "1f279d26dc71aa7860b9250b610a24e624846882",
+            "path": "plugins/contract-sure"
+          },
+          "engines": {}
+        },
         {
           "version": "0.2.0",
           "publishTimestamp": 1795528569,
