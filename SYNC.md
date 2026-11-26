@@ -1,5 +1,19 @@
 # 插件同步记录
 
+## 2026-11-26：登记问数增强 0.1.3
+
+仅新增 `@local/datahub-query-enhance` `0.1.3`，安装来源为 `https://gitee.com/groundhogtang/shanzhi-plugin.git`，固定提交 `beac1e65a95e61472f6d3c4ea6e0c3b4d8959f51`，路径 `plugins/datahub-query-enhance`。`publishTimestamp` 使用该 GitHub 发布提交的 committer 时间（Unix 秒 `1795682304`），主页同步指向该提交；历史版本 `0.1.2`、`0.1.1` 及其他插件条目不变。
+
+本版将可信标识与最后一条跟问的间距调整为 12px，使用细线圆圈问号，保留点击展开、收起和键盘操作。包的 DSH peer API 仍为 `>=0.2.0-0`，索引 `engines` 保持为空，不新增宿主版本限制。
+
+### 本次实际验证
+
+- 发布代码相对原 `main` 只涉及问数增强插件及根 README 中对应条目；32项插件测试通过，客户端重建完成，6种浏览器场景通过，包含同一尾部插槽内的 12px 间距、SVG 图标、键盘操作和窄屏布局。
+- 本机桌面端已覆盖同一客户端产物，维护者确认样式能直接加载；没有验证从 Gitee 全新安装 `0.1.3`。
+- 使用本机宿主 `0.2.2-rc.1` 的官方 `parseMarketIndex`、`marketInstallTarget` 校验完整索引与固定安装参数；JSON及历史条目一致性检查、`git diff --check` 通过。
+
+本次按维护者要求先推送 GitHub 代码库与索引库，由维护者随后先同步 Gitee 代码库，再同步 Gitee 索引库。新提交在 Gitee 的匿名读取、安装和线上索引刷新尚未验证；条目继续保留「公开来源、仅登记」。
+
 ## 2026-11-25：登记 EchoMind 会议纪要 0.1.1
 
 新增 `@local/echomind` `0.1.1`，安装来源固定到 Gitee `main` 分支上的提交 `d5fceb4e9bd74ca22b5f400dd254691b57acce91`，路径 `plugins/echomind`。`publishTimestamp` 为该提交的 committer 时间 `2026-11-25T07:20:44-08:00`（Unix 秒 `1795620044`）。旧版本 `0.1.0` 保留原提交 `602e7d51223a99e7aa6a8b48a4fa46a806ba05f9`，插件主页改指新提交。
